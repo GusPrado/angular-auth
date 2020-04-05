@@ -33,9 +33,6 @@ export function fakeBackendFactory(
           ));
         }
       }
-
-
-
        //
        // Fake implementation of /api/orders
        //
@@ -51,8 +48,6 @@ export function fakeBackendFactory(
            ));
        }
     }
-
-
 
     }, 1000);
   });
