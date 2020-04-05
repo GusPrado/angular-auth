@@ -19,6 +19,10 @@ export class OrderService {
     let options = new RequestOptions({ headers: headers })
 
     return this.http.get('/api/orders', options)*/
+
+    //*** AuthHttp NEEDS TO BE FIXED!! To make it work replace
+    // AuthHttp by regular Angular Http and code above
+
     return this.authHttp.get('/api/orders')
       .map(response => response.json());
   }
